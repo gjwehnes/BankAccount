@@ -1,8 +1,6 @@
-//2021-04-15 (for JUnit4)
-import static org.junit.Assert.assertEquals;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
 
 public class BankAccountTest
 {
@@ -10,7 +8,7 @@ public class BankAccountTest
 	static BankAccount second;
 	static BankAccount third;
 
-	@Before
+	@BeforeEach
 	public void setup() {
 		
 		if (first == null) {
